@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        JMETER_HOME = 'C:\\apache-jmeter-5.6.3'   // ← change this to your actual path
-        TEST_PLAN   = 'jpetstore_test.jmx'
+        JMETER_HOME = 'C:\JmeterInstallation\apache-jmeter-5.6.3'   // ← your actual JMeter path
+        TEST_PLAN   = 'altoro_test.jmx'
         RESULTS_JTL = 'results\\results.jtl'
         REPORT_DIR  = 'results\\html-report'
     }
@@ -63,7 +63,7 @@ pipeline {
             echo 'BUILD PASSED — Error rate within threshold.'
         }
         failure {
-            echo 'BUILD FAILED — Error rate exceeded 2% or JMeter crashed.'
+            echo 'BUILD FAILED — Error rate exceeded 2% or test crashed.'
         }
     }
 }

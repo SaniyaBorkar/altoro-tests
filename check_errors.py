@@ -20,7 +20,7 @@ def check_error_rate(jtl_file, threshold=2.0):
     print(f"{error_rate:.2f}")
 
     if error_rate > threshold:
-        sys.exit(1)   # signals Jenkins to fail the build
+        sys.exit(1)
 
     return error_rate
 
