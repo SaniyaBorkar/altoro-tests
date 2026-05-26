@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        JMETER_HOME = 'C:\JmeterInstallation\apache-jmeter-5.6.3'   // ← your actual JMeter path
+        JMETER_HOME = 'C:\\JmeterInstallation\\apache-jmeter-5.6.3'   // ← your actual JMeter path
         TEST_PLAN   = 'altoro_test.jmx'
         RESULTS_JTL = 'results\\results.jtl'
         REPORT_DIR  = 'results\\html-report'
